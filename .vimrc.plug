@@ -1,0 +1,26 @@
+call plug#begin('~/.vim/plugged')
+"Fugitive Vim Github Wrapper
+Plug 'tpope/vim-fugitive'
+Plug 'neoclide/coc.nvim', {'branch' : 'release'} 
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'preservim/nerdtree' | 
+			\Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'  
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'luochen1990/rainbow'
+Plug 'preservim/nerdcommenter'
+Plug 'junegunn/fzf'
+Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-surround'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+Plug 'mileszs/ack.vim'
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+
+colorscheme gruvbox
