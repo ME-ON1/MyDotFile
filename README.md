@@ -1,4 +1,5 @@
-# config-file
+# MYDOTFile 
 
 
-# Different configuration done by me on .bashrc by following the linux up skill challenge.
+Collection of Different configuration , aliases for .bashrc, .vimrc  
+###### This file is meant to be my backup bases.
