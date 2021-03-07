@@ -1,5 +1,5 @@
 set encoding=UTF-8
-colorscheme pablo 
+colorscheme pablo
 " TextEdit might fail if hidden is not set.
 set hidden
 set number
@@ -160,7 +160,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" for nerdTree autofocus" 
+" for nerdTree autofocus"
 autocmd VimEnter * wincmd p
 autocmd VimEnter * NERDTree
 
@@ -196,17 +196,17 @@ let g:gitgutter_sign_modified = '✹'
 let g:gitgutter_sign_removed = '-'
 let g:gitgutter_sign_removed_first_line = '-'
 let g:gitgutter_sign_modified_removed = '-'
-highlight clear SignColumn 
+highlight clear SignColumn
 
 let g:airline_powerline_fonts = 1
 
 highlight clear SignColumn
 
 set guifont=agave\ Nerd\ Font\ 11
-let g:airline_powerline_fonts = 1 
-let g:rainbow_active = 1 
+let g:airline_powerline_fonts = 1
+let g:rainbow_active = 1
  " Call the .vimrc.plug file
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : 
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
                                            \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 let g:airline_theme='Solarized_flood'
 
@@ -214,4 +214,13 @@ nmap <C-L><C-L> :set invrelativenumber<CR>
  if filereadable(expand("~/.vimrc.plug"))
      source ~/.vimrc.plug
  endif
-nmap <Leader>r :NERDTreeRefreshRoot 
+nmap <Leader>r :NERDTreeRefreshRoot
+map <C-z><up> :tabr<cr>
+
+map <C-z><down> :tabl<cr>
+
+map <C-z><left> :tabp<cr>
+
+map <C-z><right> :tabn<cr>
+set tags=./tags,./../tags,./../../tags,./../../../tags,./../../../../tags,./../../../../../tags,tags,../tags,.
+autocmd BufWritePre * :%s/\s\+$//e
